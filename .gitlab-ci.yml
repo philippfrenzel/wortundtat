@@ -1,0 +1,51 @@
+before_script:
+  - export APP_MIGRATION_LOOKUP=@root/tests/codeception/_migrations
+  - export COMPOSE_PROJECT_NAME=build${CI_BUILD_REF}
+  - export COMPOSE_HTTP_TIMEOUT=120
+  - export HOST_APP_VOLUME=$CI_PROJECT_DIR
+  - export REGISTRY_HOST=index.docker.io
+  - export REGISTRY_USER=schmunk42
+  - export IMAGE_NAME=phundament/app
+
+cache:
+  paths:
+    - vendor/
+
+stages:
+  - build
+  - test
+  - cleanup_test
+  - deploy
+
+build:
+  stage: build
+  script:
+      - bash build/ci/build.sh
+
+test:
+  stage: test
+  script:
+      - bash build/ci/test.sh
+      - mv tests/codeception/_output/latest reports-${CI_BUILD_ID}
+  artifacts:
+    paths:
+      - reports-${CI_BUILD_ID}
+
+system:
+  stage: test
+  script:
+      - docker-compose run php composer diagnose
+  allow_failure: true
+
+cleanup_test:
+  stage: cleanup_test
+  script:
+    - make TEST clean
+  when: always
+
+deploy:
+  stage: deploy
+  script:
+      - bash build/ci/deploy.sh
+  only:
+      - master

@@ -1,0 +1,18 @@
+# Phundament 4 - Local development overrides
+
+php:
+  volumes:
+    - .:/app
+  environment:
+    - YII_ENV=dev
+    - YII_DEBUG=1
+
+nginx:
+  ports:
+    - '40081:80'
+  volumes:
+    - .:/app
+
+mariadb:
+  ports:
+    - '43306:3306'

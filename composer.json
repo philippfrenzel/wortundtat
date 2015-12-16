@@ -1,0 +1,47 @@
+{
+  "name": "philippfrenzel/wortundtat",
+  "description": "REST Document Generator",
+  "keywords": [
+    "REST",
+    "WORD",
+    "PDF",
+    "HTML",
+    "generator",
+    "template"
+  ],
+  "homepage": "http://wor.tundt.at/",
+  "type": "project",
+  "license": "Apache 2.0",
+  "authors": [
+    {
+      "name": "Philipp Frenzel",
+      "email": "philipp@frenzel.net",
+      "homepage": "http://www.frenzel.net"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/philippfrenzel/wortundtat/issues?state=open",
+    "source": "https://github.com/philippfrenzel/wortundtat"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "dmstr/yii2-cms-metapackage": "^0.3.0",
+    "vlucas/phpdotenv": "2.*",
+    "yiisoft/yii2": "2.0.*",
+    "yiisoft/yii2-composer": "2.0.*"
+  },
+  "require-dev": {
+    "dmstr/yii2-cms-dev-metapackage": "@stable",
+    "yiisoft/yii2-debug": "@stable",
+    "schmunk42/yii2-giiant": "0.5.*"
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  },
+  "config": {
+    "process-timeout": 1800
+  }
+}
