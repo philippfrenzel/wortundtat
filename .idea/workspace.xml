@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d1bd6e4-67aa-43cb-82d2-46014c398068" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/LICENSE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/ci/build.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/ci/deploy.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/ci/test.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/compose/stage.override.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/compose/test.override.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/container-files/root/.composer/config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/codeception.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker-compose.override.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/10-about.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/runtime/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/AppAsset.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/js/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/less/app.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/web/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/commands/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/commands/AppController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/Helper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/User.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/assets-prod.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/env.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/config/main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/controllers/SiteController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/giiant-batch.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/init.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/migrations/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/migrations/m150917_193929_rbac.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/models/ContactForm.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/Module.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/assets/AdminAsset.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/assets/web/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/assets/web/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/assets/web/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/assets/web/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/assets/web/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/assets/web/less/site.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/controllers/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/views/default/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/views/default/view-config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/views/layouts/_sidebar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/views/layouts/box.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/modules/backend/views/layouts/main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/run.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/layouts/_modal.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/layouts/container.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/layouts/main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/site/about.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/site/contact.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/site/error.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/site/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/user/admin/_menu.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/user/admin/_user.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/user/admin/create.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/user/admin/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/views/user/admin/update.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/widgets/Alert.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_bin/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_bin/yii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_bin/yii.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_config/acceptance.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_config/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_config/functional.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_config/unit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_migrations/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_migrations/m150922_193929_rbac.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_output/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_pages/AboutPage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_pages/ContactPage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_pages/LoginPage.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_support/AcceptanceTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_support/FunctionalTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_support/UnitTester.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_support/_generated/AcceptanceTesterActions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_support/_generated/FunctionalTesterActions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/_support/_generated/UnitTesterActions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/10-preview-setup/05-AdminLoginCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/10-preview-setup/10-PreviewRoleCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/10-preview-setup/11-PreviewUserCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/11-preview-access/22-AboutCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/AboutCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/ContactCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/HomeCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/dev/JavaScriptCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/prod/app/LanguagesCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/prod/app/LoginCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/prod/app/MobileCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/prod/app/SignupCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/acceptance/prod/pages/BaseCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/dev/AboutCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/dev/ContactCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/dev/HomeCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/dev/VersionCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/prod/BackendCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/prod/LanugagesCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/functional/prod/LoginCept.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/unit.suite.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/unit/_bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/unit/fixtures/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/unit/fixtures/data/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/unit/prod/models/ContactFormTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/unit/prod/models/UserTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/codeception/unit/templates/fixtures/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/version" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.htaccess-dist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/assets/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/yii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/yii.bat" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/app/.bowerrc" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.dockerignore" afterPath="$PROJECT_DIR$/app/.dockerignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.env-dist" afterPath="$PROJECT_DIR$/app/.env-dist" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/app/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.gitlab-ci.yml" afterPath="$PROJECT_DIR$/app/.gitlab-ci.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/app/.travis.yml" />
+    </list>
+    <ignored path="wortundtat.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="wortundtat" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/docker-compose.override.yml" />
+        <option value="$PROJECT_DIR$/.env" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="1130" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wortundtat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wortundtat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wortundtat" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d1bd6e4-67aa-43cb-82d2-46014c398068" name="Default" comment="" />
+      <created>1450297146729</created>
+      <option name="number" value="Default" />
+      <updated>1450297146729</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1920" height="1130" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2553305" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.env-dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34587997">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
