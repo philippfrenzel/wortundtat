@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6fe01b973828a646e58e808a6594238d",
-    "content-hash": "32059a318a1f6762fbe8452f0fdc549f",
+    "hash": "45b6424b0b0553b4a806664bc5f52820",
+    "content-hash": "ce5a09497cba9875d6cac1ff4d13da71",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -871,89 +871,6 @@
             "time": "2015-11-06 10:35:36"
         },
         {
-            "name": "dmstr/yii2-app-command",
-            "version": "0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dmstr/yii2-app-command.git",
-                "reference": "41f2815d94d739caa131125b28585e017ec34c3c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-app-command/zipball/41f2815d94d739caa131125b28585e017ec34c3c",
-                "reference": "41f2815d94d739caa131125b28585e017ec34c3c",
-                "shasum": ""
-            },
-            "require": {
-                "mikehaertl/php-shellcommand": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "dmstr\\console\\controllers\\": "controllers"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "tobias@diemeisterei.de"
-                }
-            ],
-            "description": "Console command for Yii 2 Framework to manage your application source code and configuration settings",
-            "keywords": [
-                "application",
-                "command",
-                "configuration",
-                "management",
-                "yii2"
-            ],
-            "time": "2015-06-26 19:11:50"
-        },
-        {
-            "name": "dmstr/yii2-application-metadata",
-            "version": "0.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dmstr/yii2-application-metadata.git",
-                "reference": "3c56fe23b45686ae4a30351b82218a46a89ce890"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-application-metadata/zipball/3c56fe23b45686ae4a30351b82218a46a89ce890",
-                "reference": "3c56fe23b45686ae4a30351b82218a46a89ce890",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "2.0.*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "dmstr\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Tobias Munk",
-                    "email": "tobias@diemeisterei.de"
-                }
-            ],
-            "description": "Provides in-depth configuration and application information",
-            "keywords": [
-                "extension",
-                "yii2"
-            ],
-            "time": "2015-02-11 08:01:24"
-        },
-        {
             "name": "dmstr/yii2-bootstrap",
             "version": "0.1.1",
             "source": {
@@ -1034,22 +951,23 @@
         },
         {
             "name": "dmstr/yii2-db",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-db.git",
-                "reference": "066ce45be3e2e2b48286ef96250cdc53ae119075"
+                "reference": "49e3227665c1f38b8da5d8b7cbe29b9f5b3fbab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-db/zipball/066ce45be3e2e2b48286ef96250cdc53ae119075",
-                "reference": "066ce45be3e2e2b48286ef96250cdc53ae119075",
+                "url": "https://api.github.com/repos/dmstr/yii2-db/zipball/49e3227665c1f38b8da5d8b7cbe29b9f5b3fbab0",
+                "reference": "49e3227665c1f38b8da5d8b7cbe29b9f5b3fbab0",
                 "shasum": ""
             },
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "dmstr\\db\\": "db/"
+                    "dmstr\\db\\": "db/",
+                    "dmstr\\console\\": "console/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1069,20 +987,20 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-01-13 03:03:29"
+            "time": "2015-12-21 10:01:49"
         },
         {
             "name": "dmstr/yii2-helpers",
-            "version": "0.0.3",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-helpers.git",
-                "reference": "beb7362357f9f4210d2194c7b4eedc0603e351f7"
+                "reference": "7badd9c2152cef72b07020cecfea09aeb3854669"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-helpers/zipball/beb7362357f9f4210d2194c7b4eedc0603e351f7",
-                "reference": "beb7362357f9f4210d2194c7b4eedc0603e351f7",
+                "url": "https://api.github.com/repos/dmstr/yii2-helpers/zipball/7badd9c2152cef72b07020cecfea09aeb3854669",
+                "reference": "7badd9c2152cef72b07020cecfea09aeb3854669",
                 "shasum": ""
             },
             "require": {
@@ -1091,7 +1009,7 @@
             "type": "yii2-extension",
             "autoload": {
                 "psr-4": {
-                    "dmstr\\helpers\\": ""
+                    "dmstr\\helpers\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1102,6 +1020,10 @@
                 {
                     "name": "Sergej Kunz",
                     "email": "s.kunz@herzogkommunikation.de"
+                },
+                {
+                    "name": "Tobias Munk",
+                    "email": "t.munk@herzogkommunikation.de"
                 }
             ],
             "description": "Yii2 Helpers",
@@ -1109,32 +1031,31 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-07-02 08:38:46"
+            "time": "2015-12-21 10:11:28"
         },
         {
             "name": "dmstr/yii2-libs-metapackage",
-            "version": "0.0.2",
+            "version": "0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-libs-metapackage.git",
-                "reference": "891cbd364f8ef5a6226361fe44edb9abf1fcb1f0"
+                "reference": "f0ff6b1485b0ca41cbc32a1abb39c89f83d13453"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-libs-metapackage/zipball/891cbd364f8ef5a6226361fe44edb9abf1fcb1f0",
-                "reference": "891cbd364f8ef5a6226361fe44edb9abf1fcb1f0",
+                "url": "https://api.github.com/repos/dmstr/yii2-libs-metapackage/zipball/f0ff6b1485b0ca41cbc32a1abb39c89f83d13453",
+                "reference": "f0ff6b1485b0ca41cbc32a1abb39c89f83d13453",
                 "shasum": ""
             },
             "require": {
-                "codemix/yii2-localeurls": "1.*",
-                "codemix/yii2-streamlog": "*",
-                "dmstr/yii2-app-command": ">=0.3",
-                "dmstr/yii2-application-metadata": "*",
-                "dmstr/yii2-bootstrap": "*",
-                "dmstr/yii2-db": "*",
-                "dmstr/yii2-helpers": "*",
-                "dmstr/yii2-migrate-command": "*",
-                "schmunk42/retry": "*",
+                "codemix/yii2-localeurls": "^1.3",
+                "codemix/yii2-streamlog": "^1.0",
+                "dmstr/yii2-bootstrap": "~0.0",
+                "dmstr/yii2-db": "~0.3",
+                "dmstr/yii2-helpers": "~0.1",
+                "dmstr/yii2-migrate-command": "~0.3",
+                "mikehaertl/php-shellcommand": "^1.2",
+                "schmunk42/retry": "~0.0",
                 "yiisoft/yii2-swiftmailer": "2.*"
             },
             "type": "library",
@@ -1149,7 +1070,7 @@
                 }
             ],
             "description": "Core Library Extensions for Phundament 4 (Yii 2.0 Framework)",
-            "time": "2015-06-25 23:51:38"
+            "time": "2015-12-21 10:17:17"
         },
         {
             "name": "dmstr/yii2-migrate-command",
@@ -1193,16 +1114,16 @@
         },
         {
             "name": "dmstr/yii2-pages-module",
-            "version": "0.10.0",
+            "version": "0.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dmstr/yii2-pages-module.git",
-                "reference": "5e8f83eeda4c53b92124a0d65ee6e768a838addb"
+                "reference": "c0a1a46a6cc127e6a1aef1a6e2421333c87c61e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/5e8f83eeda4c53b92124a0d65ee6e768a838addb",
-                "reference": "5e8f83eeda4c53b92124a0d65ee6e768a838addb",
+                "url": "https://api.github.com/repos/dmstr/yii2-pages-module/zipball/c0a1a46a6cc127e6a1aef1a6e2421333c87c61e9",
+                "reference": "c0a1a46a6cc127e6a1aef1a6e2421333c87c61e9",
                 "shasum": ""
             },
             "require": {
@@ -1242,7 +1163,7 @@
                 "navigation",
                 "yii2"
             ],
-            "time": "2015-11-24 16:39:57"
+            "time": "2015-12-17 18:21:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1476,16 +1397,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "ffc59cef18864d773c79f3b2da2f34c948ff5648"
+                "reference": "fd5d59d7e5aa4f15355e2d070a5e3095c322054b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/ffc59cef18864d773c79f3b2da2f34c948ff5648",
-                "reference": "ffc59cef18864d773c79f3b2da2f34c948ff5648",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/fd5d59d7e5aa4f15355e2d070a5e3095c322054b",
+                "reference": "fd5d59d7e5aa4f15355e2d070a5e3095c322054b",
                 "shasum": ""
             },
             "require": {
@@ -1520,7 +1441,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-12-16 19:38:06"
+            "time": "2015-12-21 17:38:29"
         },
         {
             "name": "lajax/yii2-translate-manager",
@@ -1603,6 +1524,102 @@
                 "shell"
             ],
             "time": "2015-09-22 18:26:51"
+        },
+        {
+            "name": "phpoffice/phpword",
+            "version": "v0.12.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPOffice/PHPWord.git",
+                "reference": "38cb04d322007dd522cbdd8ba3cd50ab67ced0db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPOffice/PHPWord/zipball/38cb04d322007dd522cbdd8ba3cd50ab67ced0db",
+                "reference": "38cb04d322007dd522cbdd8ba3cd50ab67ced0db",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "dompdf/dompdf": "0.6.*",
+                "mpdf/mpdf": "5.*",
+                "phpdocumentor/phpdocumentor": "2.*",
+                "phploc/phploc": "2.*",
+                "phpmd/phpmd": "2.*",
+                "phpunit/phpunit": "3.7.*",
+                "sebastian/phpcpd": "2.*",
+                "squizlabs/php_codesniffer": "1.*",
+                "tecnick.com/tcpdf": "6.*"
+            },
+            "suggest": {
+                "dompdf/dompdf": "Used to write PDF",
+                "ext-gd2": "Used to add images",
+                "ext-xmlwriter": "Used to write DOCX and ODT",
+                "ext-xsl": "Used to apply XSL style sheet to main document part of OOXML template",
+                "ext-zip": "Used to write DOCX and ODT"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpOffice\\PhpWord\\": "src/PhpWord"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Baker"
+                },
+                {
+                    "name": "Franck Lefevre",
+                    "homepage": "http://blog.rootslabs.net"
+                },
+                {
+                    "name": "Gabriel Bull",
+                    "email": "me@gabrielbull.com",
+                    "homepage": "http://gabrielbull.com/"
+                },
+                {
+                    "name": "Ivan Lanin",
+                    "homepage": "http://ivan.lanin.org"
+                },
+                {
+                    "name": "Roman Syroeshko",
+                    "homepage": "http://ru.linkedin.com/pub/roman-syroeshko/34/a53/994/"
+                }
+            ],
+            "description": "PHPWord - A pure PHP library for reading and writing word processing documents (DOCX, ODT, RTF, HTML, PDF)",
+            "homepage": "http://phpoffice.github.io",
+            "keywords": [
+                "ISO IEC 29500",
+                "OOXML",
+                "Office Open XML",
+                "OpenDocument",
+                "OpenXML",
+                "PhpOffice",
+                "PhpWord",
+                "Rich Text Format",
+                "WordprocessingML",
+                "doc",
+                "docx",
+                "html",
+                "odt",
+                "office",
+                "pdf",
+                "php",
+                "reader",
+                "rtf",
+                "template",
+                "template processor",
+                "word",
+                "writer"
+            ],
+            "time": "2015-08-30 14:30:44"
         },
         {
             "name": "phpspec/php-diff",

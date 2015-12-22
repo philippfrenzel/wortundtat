@@ -1,0 +1,4 @@
+#home.jumbotron {
+    background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url('/gfx/IMG_8746.jpg');
+    background-size: cover;
+}

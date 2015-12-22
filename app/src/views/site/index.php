@@ -3,6 +3,13 @@
 $this->title .= 'Home';
 ?>
 
+<div class="jumbotron" id="home">
+    <div class="intro">
+        My Jumbo!
+    </div>
+</div>
+
+
 <div class="site-index">
 
     <?php if (!YII_ENV_PROD): ?>

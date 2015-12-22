@@ -21,7 +21,7 @@ $common = [
                 require(__DIR__ . '/assets-gen/prod.php') :
                 [
                     // Note: if your asset bundle includes bootstrap, you can disable the default asset
-                    #'yii\bootstrap\BootstrapAsset' => false,
+                    'yii\bootstrap\BootstrapAsset' => false,
                 ],
             'basePath' => '@app/../web/assets',
         ],

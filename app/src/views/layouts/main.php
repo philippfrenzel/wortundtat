@@ -83,8 +83,6 @@ AppAsset::register($this);
     NavBar::end();
     ?>
 
-    <?= Alert::widget() ?>
-
     <div class="container">
         <?=
         Breadcrumbs::widget(
@@ -95,24 +93,13 @@ AppAsset::register($this);
     </div>
 
     <?= $content ?>
+
+    <?= Alert::widget() ?>
+
+
 </div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-right">
-            <span class="label label-default"><?= YII_ENV ?></span>
-            <span class="label label-info">&copy; <?= date('Y') ?></span>
-        </p>
-
-        <p class="pull-left">
-            <?= Html::a(
-                Html::img('http://t.phundament.com/p4-16-bw.png', ['alt' => 'Icon Phundament 4']),
-                '#',
-                ['data-toggle' => 'modal', 'data-target' => '#infoModal']
-            ) ?>
-        </p>
-    </div>
-</footer>
+<?= $this->render('partials/_footer'); ?>
 
 <!-- Info Modal -->
 <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-hidden="true">
