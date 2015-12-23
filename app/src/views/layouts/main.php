@@ -10,7 +10,9 @@ use yii\widgets\Breadcrumbs;
 /* @var $content string */
 $this->title = $this->title . ' - ' . Yii::$app->params['appName'];
 AppAsset::register($this);
+xj\modernizr\ModernizrAsset::register($this);
 ?>
+
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>">
@@ -28,7 +30,7 @@ AppAsset::register($this);
     <?php
     NavBar::begin(
         [
-            'brandLabel' => getenv('APP_NAME'),
+            'brandLabel' => '<i class="fa fa-retweet"></i>  ' . getenv('APP_NAME'),
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-default',

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "45b6424b0b0553b4a806664bc5f52820",
-    "content-hash": "ce5a09497cba9875d6cac1ff4d13da71",
+    "hash": "92d43640f3bc203992ee4681fa1a6cd1",
+    "content-hash": "742bfe9c1a7bffa225ec44791e7b3d8a",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -323,6 +323,22 @@
                 ]
             },
             "description": "A web-based tool to view, edit and format JSON"
+        },
+        {
+            "name": "bower-asset/modernizr",
+            "version": "v2.8.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Modernizr/Modernizr.git",
+                "reference": "d6bb30c0f12ebb3ddd01e90b0bf435e1c34e6f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Modernizr/Modernizr/zipball/d6bb30c0f12ebb3ddd01e90b0bf435e1c34e6f11",
+                "reference": "d6bb30c0f12ebb3ddd01e90b0bf435e1c34e6f11",
+                "shasum": ""
+            },
+            "type": "bower-asset-library"
         },
         {
             "name": "bower-asset/punycode",
@@ -1397,16 +1413,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.5",
+            "version": "v2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "fd5d59d7e5aa4f15355e2d070a5e3095c322054b"
+                "reference": "f8475c5b895726e082a1614993c1aff64f77e367"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/fd5d59d7e5aa4f15355e2d070a5e3095c322054b",
-                "reference": "fd5d59d7e5aa4f15355e2d070a5e3095c322054b",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/f8475c5b895726e082a1614993c1aff64f77e367",
+                "reference": "f8475c5b895726e082a1614993c1aff64f77e367",
                 "shasum": ""
             },
             "require": {
@@ -1441,7 +1457,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-12-21 17:38:29"
+            "time": "2015-12-22 17:42:57"
         },
         {
             "name": "lajax/yii2-translate-manager",
@@ -1857,6 +1873,43 @@
                 "environment"
             ],
             "time": "2015-10-28 18:53:35"
+        },
+        {
+            "name": "xj/yii2-modernizr-widget",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xjflyttp/yii2-modernizr-widget.git",
+                "reference": "3444217a39b8f56f58bd1d1b02cc068c90118d76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xjflyttp/yii2-modernizr-widget/zipball/3444217a39b8f56f58bd1d1b02cc068c90118d76",
+                "reference": "3444217a39b8f56f58bd1d1b02cc068c90118d76",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/modernizr": "~2.8.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "xj\\modernizr\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "xjflyttp",
+                    "email": "xjflyttp@gmail.com"
+                }
+            ],
+            "description": "yii2-modernizr-widget",
+            "time": "2015-05-17 14:37:14"
         },
         {
             "name": "yiisoft/yii2",
@@ -2591,6 +2644,90 @@
             "time": "2014-07-23 18:24:17"
         },
         {
+            "name": "pheme/yii2-settings",
+            "version": "0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phemellc/yii2-settings.git",
+                "reference": "8c81f472d5342f9be5a842e62f96a35211c1bc75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phemellc/yii2-settings/zipball/8c81f472d5342f9be5a842e62f96a35211c1bc75",
+                "reference": "8c81f472d5342f9be5a842e62f96a35211c1bc75",
+                "shasum": ""
+            },
+            "require": {
+                "pheme/yii2-toggle-column": "*",
+                "yiisoft/yii2": ">=2.0.6"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "pheme\\settings\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Aris Karageorgos",
+                    "email": "aris@phe.me"
+                }
+            ],
+            "description": "Yii2 Database settings",
+            "keywords": [
+                "Settings",
+                "config",
+                "yii2"
+            ],
+            "time": "2015-12-16 03:25:55"
+        },
+        {
+            "name": "pheme/yii2-toggle-column",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phemellc/yii2-toggle-column.git",
+                "reference": "6fb846a86f76234c63b3d475dc70dd59022718c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phemellc/yii2-toggle-column/zipball/6fb846a86f76234c63b3d475dc70dd59022718c1",
+                "reference": "6fb846a86f76234c63b3d475dc70dd59022718c1",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "\\pheme\\grid\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aris Karageorgos",
+                    "email": "aris@phe.me"
+                }
+            ],
+            "description": "Provides a toggle data column and action",
+            "keywords": [
+                "column",
+                "extension",
+                "toggle",
+                "yii2"
+            ],
+            "time": "2014-10-12 15:54:14"
+        },
+        {
             "name": "phpdocumentor/reflection",
             "version": "1.0.7",
             "source": {
@@ -2783,19 +2920,20 @@
         },
         {
             "name": "schmunk42/yii2-markdocs-module",
-            "version": "0.2.0",
+            "version": "0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmunk42/yii2-markdocs-module.git",
-                "reference": "5b225c8d7b00c2298e4742a55228055c66df0263"
+                "reference": "db4105721679c585426aaba21aaa6e5d04f35be1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/5b225c8d7b00c2298e4742a55228055c66df0263",
-                "reference": "5b225c8d7b00c2298e4742a55228055c66df0263",
+                "url": "https://api.github.com/repos/schmunk42/yii2-markdocs-module/zipball/db4105721679c585426aaba21aaa6e5d04f35be1",
+                "reference": "db4105721679c585426aaba21aaa6e5d04f35be1",
                 "shasum": ""
             },
             "require": {
+                "pheme/yii2-settings": "~0.3",
                 "yiisoft/yii2": "*"
             },
             "type": "yii2-extension",
@@ -2819,7 +2957,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2015-12-05 17:01:30"
+            "time": "2015-12-22 20:50:40"
         },
         {
             "name": "sebastian/diff",

@@ -21,12 +21,24 @@ $common = [
                 require(__DIR__ . '/assets-gen/prod.php') :
                 [
                     // Note: if your asset bundle includes bootstrap, you can disable the default asset
-                    'yii\bootstrap\BootstrapAsset' => false,
+                    //'yii\bootstrap\BootstrapAsset' => false,
                 ],
             'basePath' => '@app/../web/assets',
         ],
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
+        ],
+        'authClientCollection' => [
+            'class'   => \yii\authclient\Collection::className(),
+            'clients' => [
+                // here is the list of clients you want to use
+                // you can read more in the "Available clients" section
+                'github' => [
+                    'class'        => 'dektrium\user\clients\GitHub',
+                    'clientId'     => '2c6657465ee42a24cb8e',
+                    'clientSecret' => '60fea54543bdc8d666cb2ea8a217e632d61738ac',
+                ],
+            ],
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -66,6 +78,7 @@ $common = [
             'enablePrettyUrl' => getenv('APP_PRETTY_URLS') ? true : false,
             'showScriptName' => getenv('YII_ENV_TEST') ? true : false,
             'enableDefaultLanguageUrlCode' => true,
+            //'enableStrictParsing' => true,
             'baseUrl' => '/',
             'rules' => [
                 'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',
@@ -73,6 +86,11 @@ $common = [
             ],
             'languages' => [
                 'en', 'de',
+            ]
+        ],
+        'request' => [
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
             ]
         ],
         'user' => [
@@ -101,6 +119,9 @@ $common = [
             'layout' => '@admin-views/layouts/box',
             'markdownUrl' => '@app/../docs',
             'forkUrl' => false
+        ],
+        'templates' => [
+            'class' => 'app\modules\templates\Module',
         ],
         'pages' => [
             'class' => 'dmstr\modules\pages\Module',
