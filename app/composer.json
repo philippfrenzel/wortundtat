@@ -25,7 +25,12 @@
   },
   "minimum-stability": "stable",
   "require": {
+    "bedezign/yii2-audit" : "^1.0",
+    "creocoder/yii2-flysystem" : "0.8.*",
     "dmstr/yii2-cms-metapackage": "^0.3.0",
+    "kartik-v/yii2-widgets": "*",
+    "kartik-v/yii2-widget-growl" : "*",
+    "league/flysystem-dropbox": "~1.0",
     "phpoffice/phpword": "*",
     "vlucas/phpdotenv": "2.*",
     "xj/yii2-modernizr-widget" : "*",

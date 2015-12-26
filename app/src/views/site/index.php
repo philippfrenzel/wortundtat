@@ -77,9 +77,25 @@ $this->title .= 'Home';
                 <p>Step Two:</p>
                 Upload the template to wor.tundt.at and name it "HelloWorld".
                 <p>Step Three:</p>
-
+                Send a REST Request with the following data: <br>
+                <code>https://wor.tundt.at/api/v1/template</code>
+<pre><code>{
+    'template' : {
+        'key' : 'acf123#322ecfrdsdt2345!',
+        'doc' : 'HelloWorld',
+        'format' : 'Word2013',
+        'target' : 'binary',
+        'fields' : [
+            {'name' : 'Max Muster'}
+        ]
+    }
+}
+</code></pre>
             </div>
             <div class="col-md-4">
+                <p>Step Four:</p>
+                As response to your request, you'll recieve a binary file which will contain the following word document:
+
                 <h3>Your Benefits:</h3>
                 <p>
                     Wor t und t at is your solution for a centralized template management.
@@ -103,25 +119,25 @@ $this->title .= 'Home';
                         <td>ONLINE SUPPORT</td>
                     </tr>
                     <tr>
-                        <td> - </td>
+                        <td>-</td>
                     </tr>
                     <tr>
-                        <td> - </td>
+                        <td>-</td>
                     </tr>
                 </table>
             </div>
-            <div class="col-md-4 bg-info">
+            <div class="col-md-4 bg-primary">
                 <h3>SMB</h3>
                 <small class="pull-right"><b>20,- </b>USD/mth.</small>
                 <table class="table">
                     <tr>
-                        <td>10000 REQUESTS PER DAY</td>
+                        <td>1000 REQUESTS PER DAY</td>
                     </tr>
                     <tr>
-                        <td>ONLINE SUPPORT</td>
+                        <td>ONLINE/PHONE SUPPORT</td>
                     </tr>
                     <tr>
-                        <td> - </td>
+                        <td>1 day online storage of data</td>
                     </tr>
                     <tr>
                         <td> - </td>
@@ -133,16 +149,16 @@ $this->title .= 'Home';
                 <small class="pull-right"><b>100,- </b>USD/mth.</small>
                 <table class="table">
                     <tr>
-                        <td>UNLIMITED REQUESTS PER DAY</td>
+                        <td>10000 REQUESTS PER DAY</td>
                     </tr>
                     <tr>
-                        <td>ONLINE SUPPORT</td>
+                        <td>ONLINE/PHONE SUPPORT</td>
                     </tr>
                     <tr>
-                        <td> - </td>
+                        <td>1 month online storage, additional individual storage providers (DropBox/AWS/WebDav)</td>
                     </tr>
                     <tr>
-                        <td> - </td>
+                        <td></td>
                     </tr>
                 </table>
             </div>

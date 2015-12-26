@@ -88,11 +88,6 @@ $common = [
                 'en', 'de',
             ]
         ],
-        'request' => [
-            'parsers' => [
-                'application/json' => 'yii\web\JsonParser',
-            ]
-        ],
         'user' => [
             'class' => 'app\components\User',
             'enableAutoLogin' => true,
@@ -107,7 +102,10 @@ $common = [
                 ],
             ],
         ],
-
+        'fslocal' => [
+            'class' => 'creocoder\flysystem\LocalFilesystem',
+            'path'  => '@webroot/files',
+        ],
     ],
     'modules' => [
         'backend' => [
@@ -166,6 +164,7 @@ $common = [
             '@yii/rbac/migrations',
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
+            '@app/modules/templates/migrations',
         ]
     ]
 
@@ -199,6 +198,9 @@ $web = [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => getenv('APP_COOKIE_VALIDATION_KEY'),
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ]
         ],
         'user' => [
             'identityClass' => 'dektrium\user\models\User',

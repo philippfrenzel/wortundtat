@@ -65,7 +65,23 @@ class SiteController extends Controller
     public function actionIndex()
     {
         Helper::checkApplication();
+        if(!Yii::$app->user->isGuest)
+            return $this->render('user_index');
 
         return $this->render('index');
+    }
+
+    /**
+     * @param null $page
+     * @return string
+     */
+    public function actionView($page = NULL)
+    {
+        $this->layout = '/container';
+
+        if(is_null($page))
+            return $this->render('docs/quickstart');
+
+        return $this->render('docs/' . $page);
     }
 }

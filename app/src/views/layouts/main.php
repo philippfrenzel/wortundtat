@@ -1,10 +1,10 @@
 <?php
 use app\assets\AppAsset;
-use app\widgets\Alert;
 use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\helpers\Html;
 use yii\widgets\Breadcrumbs;
+use kartik\growl\Growl;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -25,6 +25,41 @@ xj\modernizr\ModernizrAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
+
+<?php if (Yii::$app->session->hasFlash('success')): ?>
+    <?= Growl::widget([
+        'type'  => Growl::TYPE_INFO,
+        'icon'  => 'glyphicon glyphicon-ok-sign',
+        'title' => 'Hinweis',
+        'delay' => 0,
+        'showSeparator' => true,
+        'useAnimation' => true,
+        'body'  => Yii::$app->session->getFlash('success'),
+        'pluginOptions' => [
+            'placement' => [
+                'from' => 'top',
+                'align' => 'right',
+            ]
+        ]
+    ]);?>
+<?php elseif (Yii::$app->session->hasFlash('error')): ?>
+    <?= Growl::widget([
+        'type'  => Growl::TYPE_WARNING,
+        'icon'  => 'glyphicon glyphicon-ok-sign',
+        'title' => 'Alert',
+        'delay' => 0,
+        'showSeparator' => true,
+        'useAnimation' => true,
+        'body'  => Yii::$app->session->getFlash('error'),
+        'pluginOptions' => [
+            'placement' => [
+                'from' => 'top',
+                'align' => 'right',
+            ]
+        ]
+    ]);?>
+<?php endif; ?>
+
 <div class="wrap">
 
     <?php
@@ -45,6 +80,9 @@ xj\modernizr\ModernizrAsset::register($this);
         ]
     );
     $menuItems = [];
+
+    $menuItems[] = ['label' => 'Documentation', 'url' => ['/site/view']];
+
     if (Yii::$app->hasModule('user')) {
         if (Yii::$app->user->isGuest) {
             $menuItems[] = ['label' => 'Signup', 'url' => ['/user/registration/register']];
@@ -95,9 +133,6 @@ xj\modernizr\ModernizrAsset::register($this);
     </div>
 
     <?= $content ?>
-
-    <?= Alert::widget() ?>
-
 
 </div>
 

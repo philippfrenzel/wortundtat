@@ -1,4 +1,4 @@
-Application Documentation
-=========================
+# Documentation
 
-https://github.com/phundament/docs
+## Template Management
+

@@ -9,7 +9,6 @@ use yii\helpers\Html;
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span
                     class="sr-only">Close</span></button>
             <div class="text-center">
-                <?= Html::img('http://t.phundament.com/p4-64-bw.png', ['alt' => 'Logo Phundament 4']) ?>
                 <h3><?= getenv('APP_NAME') ?></h3>
 
                 <p>

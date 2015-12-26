@@ -1,0 +1,499 @@
+Array
+(
+    [0] => Array
+        (
+            [line] => 19
+            [file] => ./src/assets/AppAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [1] => Array
+        (
+            [line] => 19
+            [file] => ./src/assets/AppAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [2] => Array
+        (
+            [line] => 21
+            [file] => ./src/assets/AppAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [3] => Array
+        (
+            [line] => 21
+            [file] => ./src/assets/AppAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [4] => Array
+        (
+            [line] => 27
+            [file] => ./src/assets/AppAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [5] => Array
+        (
+            [line] => 27
+            [file] => ./src/assets/AppAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [6] => Array
+        (
+            [line] => 33
+            [file] => ./src/assets/AppAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [7] => Array
+        (
+            [line] => 33
+            [file] => ./src/assets/AppAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [8] => Array
+        (
+            [line] => 39
+            [file] => ./src/assets/AppAsset.php
+            [message] => No docblock for element 'init'
+        )
+
+    [9] => Array
+        (
+            [line] => 23
+            [file] => ./src/commands/AppController.php
+            [message] => No docblock for element '$defaultAction'
+        )
+
+    [10] => Array
+        (
+            [line] => 23
+            [file] => ./src/commands/AppController.php
+            [message] => No short description for element '$defaultAction'
+        )
+
+    [11] => Array
+        (
+            [line] => 118
+            [file] => ./src/commands/AppController.php
+            [message] => No docblock for element 'action'
+        )
+
+    [12] => Array
+        (
+            [line] => 16
+            [file] => ./src/components/Helper.php
+            [message] => No docblock for element 'app\components\Helper'
+        )
+
+    [13] => Array
+        (
+            [line] => 18
+            [file] => ./src/components/Helper.php
+            [message] => No docblock for element 'checkApplication'
+        )
+
+    [14] => Array
+        (
+            [line] => 21
+            [file] => ./src/controllers/SiteController.php
+            [message] => Method behaviors has no parent to inherit from in app\controllers\SiteController.
+        )
+
+    [15] => Array
+        (
+            [line] => 48
+            [file] => ./src/controllers/SiteController.php
+            [message] => Method actions has no parent to inherit from in app\controllers\SiteController.
+        )
+
+    [16] => Array
+        (
+            [line] => 13
+            [file] => ./src/models/ContactForm.php
+            [message] => No docblock for element '$name'
+        )
+
+    [17] => Array
+        (
+            [line] => 13
+            [file] => ./src/models/ContactForm.php
+            [message] => No short description for element '$name'
+        )
+
+    [18] => Array
+        (
+            [line] => 14
+            [file] => ./src/models/ContactForm.php
+            [message] => No docblock for element '$email'
+        )
+
+    [19] => Array
+        (
+            [line] => 14
+            [file] => ./src/models/ContactForm.php
+            [message] => No short description for element '$email'
+        )
+
+    [20] => Array
+        (
+            [line] => 15
+            [file] => ./src/models/ContactForm.php
+            [message] => No docblock for element '$subject'
+        )
+
+    [21] => Array
+        (
+            [line] => 15
+            [file] => ./src/models/ContactForm.php
+            [message] => No short description for element '$subject'
+        )
+
+    [22] => Array
+        (
+            [line] => 16
+            [file] => ./src/models/ContactForm.php
+            [message] => No docblock for element '$body'
+        )
+
+    [23] => Array
+        (
+            [line] => 16
+            [file] => ./src/models/ContactForm.php
+            [message] => No short description for element '$body'
+        )
+
+    [24] => Array
+        (
+            [line] => 17
+            [file] => ./src/models/ContactForm.php
+            [message] => No docblock for element '$verifyCode'
+        )
+
+    [25] => Array
+        (
+            [line] => 17
+            [file] => ./src/models/ContactForm.php
+            [message] => No short description for element '$verifyCode'
+        )
+
+    [26] => Array
+        (
+            [line] => 22
+            [file] => ./src/models/ContactForm.php
+            [message] => Method rules has no parent to inherit from in app\models\ContactForm.
+        )
+
+    [27] => Array
+        (
+            [line] => 37
+            [file] => ./src/models/ContactForm.php
+            [message] => Method attributeLabels has no parent to inherit from in app\models\ContactForm.
+        )
+
+    [28] => Array
+        (
+            [line] => 22
+            [file] => ./src/modules/backend/Module.php
+            [message] => No docblock for element 'getMenuItems'
+        )
+
+    [29] => Array
+        (
+            [line] => 54
+            [file] => ./src/modules/backend/Module.php
+            [message] => No docblock for element 'getControllers'
+        )
+
+    [30] => Array
+        (
+            [line] => 21
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [31] => Array
+        (
+            [line] => 21
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [32] => Array
+        (
+            [line] => 23
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No docblock for element '$css'
+        )
+
+    [33] => Array
+        (
+            [line] => 23
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No short description for element '$css'
+        )
+
+    [34] => Array
+        (
+            [line] => 26
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [35] => Array
+        (
+            [line] => 26
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [36] => Array
+        (
+            [line] => 28
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [37] => Array
+        (
+            [line] => 28
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [38] => Array
+        (
+            [line] => 34
+            [file] => ./src/modules/backend/assets/AdminAsset.php
+            [message] => No docblock for element 'init'
+        )
+
+    [39] => Array
+        (
+            [line] => 5
+            [file] => ./src/modules/templates/Module.php
+            [message] => No docblock for element 'app\modules\templates\Module'
+        )
+
+    [40] => Array
+        (
+            [line] => 7
+            [file] => ./src/modules/templates/Module.php
+            [message] => No docblock for element '$controllerNamespace'
+        )
+
+    [41] => Array
+        (
+            [line] => 7
+            [file] => ./src/modules/templates/Module.php
+            [message] => No short description for element '$controllerNamespace'
+        )
+
+    [42] => Array
+        (
+            [line] => 9
+            [file] => ./src/modules/templates/Module.php
+            [message] => No docblock for element 'init'
+        )
+
+    [43] => Array
+        (
+            [line] => 7
+            [file] => ./src/modules/templates/controllers/DefaultController.php
+            [message] => No docblock for element 'app\modules\templates\controllers\DefaultController'
+        )
+
+    [44] => Array
+        (
+            [line] => 9
+            [file] => ./src/modules/templates/controllers/DefaultController.php
+            [message] => No docblock for element 'actionIndex'
+        )
+
+    [45] => Array
+        (
+            [file] => ./src/modules/templates/controllers/TemplateController.php
+            [message] => broken link to \app\modules\templates\controllers\Request::enableCsrfValidation in app\modules\templates\controllers\TemplateController
+        )
+
+    [46] => Array
+        (
+            [line] => 23
+            [file] => ./src/modules/templates/controllers/TemplateController.php
+            [message] => No short description for element '$layout'
+        )
+
+    [47] => Array
+        (
+            [line] => 17
+            [file] => ./src/modules/templates/models/Template.php
+            [message] => Method behaviors has no parent to inherit from in app\modules\templates\models\Template.
+        )
+
+    [48] => Array
+        (
+            [line] => 29
+            [file] => ./src/modules/templates/models/TemplateSearch.php
+            [message] => Method scenarios has no parent to inherit from in app\modules\templates\models\TemplateSearch.
+        )
+
+    [49] => Array
+        (
+            [line] => 36
+            [file] => ./src/modules/templates/models/base/Template.php
+            [message] => Method tableName has no parent to inherit from in app\modules\templates\models\base\Template.
+        )
+
+    [50] => Array
+        (
+            [line] => 36
+            [file] => ./src/modules/templates/models/base/Template.php
+            [message] => Method tableName has no parent to inherit from in app\modules\templates\models\base\Template.
+        )
+
+    [51] => Array
+        (
+            [line] => 44
+            [file] => ./src/modules/templates/models/base/Template.php
+            [message] => Method rules has no parent to inherit from in app\modules\templates\models\base\Template.
+        )
+
+    [52] => Array
+        (
+            [line] => 44
+            [file] => ./src/modules/templates/models/base/Template.php
+            [message] => Method rules has no parent to inherit from in app\modules\templates\models\base\Template.
+        )
+
+    [53] => Array
+        (
+            [line] => 56
+            [file] => ./src/modules/templates/models/base/Template.php
+            [message] => Method attributeLabels has no parent to inherit from in app\modules\templates\models\base\Template.
+        )
+
+    [54] => Array
+        (
+            [line] => 56
+            [file] => ./src/modules/templates/models/base/Template.php
+            [message] => Method attributeLabels has no parent to inherit from in app\modules\templates\models\base\Template.
+        )
+
+    [55] => Array
+        (
+            [line] => 50
+            [file] => ./src/widgets/Alert.php
+            [message] => No docblock for element 'init'
+        )
+
+    [56] => Array
+        (
+            [line] => 15
+            [file] => ./src/widgets/HtmlWidget.php
+            [message] => No docblock for element 'app\widgets\HtmlWidget'
+        )
+
+    [57] => Array
+        (
+            [line] => 20
+            [file] => ./src/widgets/HtmlWidget.php
+            [message] => No docblock for element 'run'
+        )
+
+    [58] => Array
+        (
+            [line] => 18
+            [file] => ./web/apidocs/assets/badb3871/lib/Indexer.php
+            [message] => No docblock for element '$index'
+        )
+
+    [59] => Array
+        (
+            [line] => 18
+            [file] => ./web/apidocs/assets/badb3871/lib/Indexer.php
+            [message] => No short description for element '$index'
+        )
+
+    [60] => Array
+        (
+            [line] => 19
+            [file] => ./web/apidocs/assets/badb3871/lib/Indexer.php
+            [message] => No docblock for element '$files'
+        )
+
+    [61] => Array
+        (
+            [line] => 19
+            [file] => ./web/apidocs/assets/badb3871/lib/Indexer.php
+            [message] => No short description for element '$files'
+        )
+
+    [62] => Array
+        (
+            [line] => 21
+            [file] => ./web/apidocs/assets/badb3871/lib/Indexer.php
+            [message] => No docblock for element 'indexFiles'
+        )
+
+    [63] => Array
+        (
+            [line] => 57
+            [file] => ./web/apidocs/assets/badb3871/lib/Indexer.php
+            [message] => No docblock for element 'generateFileInfo'
+        )
+
+    [64] => Array
+        (
+            [line] => 73
+            [file] => ./web/apidocs/assets/badb3871/lib/Indexer.php
+            [message] => No docblock for element 'exportJs'
+        )
+
+    [65] => Array
+        (
+            [line] => 20
+            [file] => ./web/apidocs/assets/badb3871/lib/analyzer/HtmlAnalyzer.php
+            [message] => No docblock for element '$headWeight'
+        )
+
+    [66] => Array
+        (
+            [line] => 20
+            [file] => ./web/apidocs/assets/badb3871/lib/analyzer/HtmlAnalyzer.php
+            [message] => No short description for element '$headWeight'
+        )
+
+    [67] => Array
+        (
+            [line] => 21
+            [file] => ./web/apidocs/assets/badb3871/lib/analyzer/HtmlAnalyzer.php
+            [message] => No docblock for element '$titleWeight'
+        )
+
+    [68] => Array
+        (
+            [line] => 21
+            [file] => ./web/apidocs/assets/badb3871/lib/analyzer/HtmlAnalyzer.php
+            [message] => No short description for element '$titleWeight'
+        )
+
+    [69] => Array
+        (
+            [line] => 22
+            [file] => ./web/apidocs/assets/badb3871/lib/analyzer/HtmlAnalyzer.php
+            [message] => No docblock for element '$textWeight'
+        )
+
+    [70] => Array
+        (
+            [line] => 22
+            [file] => ./web/apidocs/assets/badb3871/lib/analyzer/HtmlAnalyzer.php
+            [message] => No short description for element '$textWeight'
+        )
+
+)
