@@ -81,7 +81,14 @@ $common = [
             //'enableStrictParsing' => true,
             'baseUrl' => '/',
             'rules' => [
+                [
+                    'class' => 'yii\rest\UrlRule',
+                    'controller' => [
+                        'templates/api/v1/template',
+                    ],
+                ],
                 'docs/<file:[a-zA-Z0-9_\-\./]+>' => 'docs',
+                'POST api/v1/template/view/<id>' => 'templates/api/v1/template/process',
                 #'docs' => 'docs/default/index',
             ],
             'languages' => [
@@ -104,7 +111,7 @@ $common = [
         ],
         'fslocal' => [
             'class' => 'creocoder\flysystem\LocalFilesystem',
-            'path'  => '@webroot/files',
+            'path'  => '@webroot/../files',
         ],
     ],
     'modules' => [

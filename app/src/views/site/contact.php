@@ -7,11 +7,11 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 /* @var $model \app\models\ContactForm */
 
-$this->title                   = 'Contact';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-contact container">
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="container">
+    <h2 class="text-center"><?= Html::encode('Contact') ?></h2>
+
+    <hr>
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 

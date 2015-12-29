@@ -78,8 +78,8 @@
 
 footer {
     background-color: #4d4d4d;
-    min-height: 428px;
-    margin-top: 24px;
+    min-height: 228px;
+    padding-top: 24px;
 }
 footer, footer a {
     color: #838383;

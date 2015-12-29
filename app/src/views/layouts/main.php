@@ -65,7 +65,7 @@ xj\modernizr\ModernizrAsset::register($this);
     <?php
     NavBar::begin(
         [
-            'brandLabel' => '<i class="fa fa-retweet"></i>  ' . getenv('APP_NAME'),
+            'brandLabel' => '<i class="fa fa-retweet"></i>  ' . getenv('APP_NAME') .'(beta)',
             'brandUrl' => Yii::$app->homeUrl,
             'options' => [
                 'class' => 'navbar-default',

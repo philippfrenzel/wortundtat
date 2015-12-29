@@ -15,8 +15,8 @@ $this->title .= 'Home';
             <div class="clearfix">
             </div>
             <div class="text-center">
-                <a href="<?= Url::to('/docs') ?>" class="btn btn-primary btn-lg">Documentation</a>
-                <a href="https://github.com/phundament/app/releases" class="btn btn-primary btn-lg">Hello World!</a>
+                <a href="<?= Url::to('/site/view') ?>" class="btn btn-primary btn-lg">Documentation</a>
+                <a href="<?= Url::to(['/site/view','page' => 'samples']) ?>" class="btn btn-primary btn-lg">Hello World!</a>
                 <a href="<?= Url::to('/user/register') ?>" class="btn btn-danger btn-lg">Registration</a>
                 <a href="<?= Url::to('/user/login') ?>" class="btn btn-success btn-lg">Sign-Up (Social Auth)</a>
             </div>
@@ -66,6 +66,7 @@ $this->title .= 'Home';
                     <li>Output format(s) - PDF, DOC, ODT etc.</li>
                     <li>Return Type - can be stream back to application, email, download url</li>
                 </ul>
+                <img src="/gfx/RESTSCHEMA.png" alt="Schema" class="img-responsive">
             </div>
             <div class="col-md-4">
                 <h3>Quick Step by Step Sample:</h3>
@@ -77,16 +78,18 @@ $this->title .= 'Home';
                 <p>Step Two:</p>
                 Upload the template to wor.tundt.at and name it "HelloWorld".
                 <p>Step Three:</p>
-                Send a REST Request with the following data: <br>
-                <code>https://wor.tundt.at/api/v1/template</code>
+                Send a POST - REST Request with the following data: <br>
+                <code>https://wor.tundt.at/api/v1/template/view/1</code>
 <pre><code>{
-    'template' : {
-        'key' : 'acf123#322ecfrdsdt2345!',
-        'doc' : 'HelloWorld',
-        'format' : 'Word2013',
-        'target' : 'binary',
-        'fields' : [
-            {'name' : 'Max Muster'}
+    "template" : {
+        "key" : "acf123#322ecfrdsdt2345!",
+        "docid" : 1,
+        "doc" : "HelloWorld",
+        "format" : "Word2013",
+        "target" : "binary",
+        "fields" : [
+            {"name" : "Paul Panther"},
+            {"vorname" : "Ubekannt"}
         ]
     }
 }
@@ -99,7 +102,14 @@ $this->title .= 'Home';
                 <h3>Your Benefits:</h3>
                 <p>
                     Wor t und t at is your solution for a centralized template management.
+                    It is:
                 </p>
+                <ul>
+                    <li>Simple</li>
+                    <li>Flexible</li>
+                    <li>Easy to Integrate with your existing solutions</li>
+                    <li>Reliable</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -119,16 +129,15 @@ $this->title .= 'Home';
                         <td>ONLINE SUPPORT</td>
                     </tr>
                     <tr>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <td>-</td>
+                        <td>
+                            Manage up to 50 templates
+                        </td>
                     </tr>
                 </table>
             </div>
             <div class="col-md-4 bg-primary">
                 <h3>SMB</h3>
-                <small class="pull-right"><b>20,- </b>USD/mth.</small>
+                <small class="pull-right"><b>50,- </b>USD/mth.</small>
                 <table class="table">
                     <tr>
                         <td>1000 REQUESTS PER DAY</td>
@@ -137,32 +146,43 @@ $this->title .= 'Home';
                         <td>ONLINE/PHONE SUPPORT</td>
                     </tr>
                     <tr>
-                        <td>1 day online storage of data</td>
+                        <td>
+                            Manage up to 500 templates
+                        </td>
                     </tr>
                     <tr>
-                        <td> - </td>
+                        <td>1 day online storage of processed documents</td>
                     </tr>
                 </table>
             </div>
             <div class="col-md-4 bg-warning">
                 <h3>ENTERPRISE</h3>
-                <small class="pull-right"><b>100,- </b>USD/mth.</small>
+                <small class="pull-right"><b>250,- </b>USD/mth.</small>
                 <table class="table">
                     <tr>
-                        <td>10000 REQUESTS PER DAY</td>
+                        <td>10000 REQUESTS PER DAY *</td>
                     </tr>
                     <tr>
                         <td>ONLINE/PHONE SUPPORT</td>
                     </tr>
                     <tr>
-                        <td>1 month online storage, additional individual storage providers (DropBox/AWS/WebDav)</td>
+                        <td>
+                            unlimited templates
+                        </td>
                     </tr>
                     <tr>
-                        <td></td>
+                        <td>1 month online storage, additional individual storage providers (DropBox/AWS/WebDav)</td>
                     </tr>
                 </table>
             </div>
         </div>
+    </div>
+    <div class="container">
+        <small>* Because of the server management, if you need to process more than 10000 documents a day, we need to cluster your account, why an additional enterprise plan will be requiered.</small>
+    </div>
+
+    <div class="container-fluid bg-primary">
+        <?= $this->render('contact',['model' => new app\models\ContactForm()]); ?>
     </div>
 
 </div>

@@ -10,11 +10,23 @@ use yii\helpers\Url;
 ?>
 
 <div class="row">
-    <div class="col-md-3">
+    <div class="col-md-4">
         <h2>
             <i class="fa fa-file"></i>
             <?= $model->template_name; ?>
         </h2>
+    </div>
+    <div class="col-md-4">
+        <table class="table">
+            <tr>
+                <td>Document ID:</td>
+                <td>#<?= $model->id; ?></td>
+            </tr>
+            <tr>
+                <td>REST-URL:</td>
+                <td><?=Url::to(['/api/v1/template/view/' . $model->id]) ?></td>
+            </tr>
+        </table>
     </div>
     <div class="col-md-4">
         <table class="table">
@@ -29,10 +41,6 @@ use yii\helpers\Url;
             <tr>
                 <td>Size:</td>
                 <td><?= $model->template_size; ?></td>
-            </tr>
-            <tr>
-                <td>Path:</td>
-                <td><?= $model->template_path; ?></td>
             </tr>
         </table>
     </div>

@@ -100,17 +100,17 @@ class TemplateController extends Controller
 
 		if ($model->load($_POST) && $model->save()) {
 			$template = UploadedFile::getInstance($model,'file');
-			/*if($model->upload())
-			{*/
-				$model->template_file = $template->name;
-				$model->template_type = $template->extension;
-				$model->template_size = $template->size;
-				$model->save();
 
-				//lets save the file
-				Yii::$app->fslocal->createDir($model->id);
-				Yii::$app->fslocal->put($model->id . '/' . $template->name, $template);
-			//}
+			$model->template_file = $template->name;
+			$model->template_type = $template->extension;
+			$model->template_size = $template->size;
+			$model->save();
+
+			//lets save the file
+			Yii::$app->fslocal->createDir($model->id);
+			$stream = fopen($template->tempName, 'r+');
+			Yii::$app->fslocal->putStream($model->id . '/' . $template->name, $stream);
+			fclose($stream);
 
 			return $this->redirect(Url::previous());
 		} else {
