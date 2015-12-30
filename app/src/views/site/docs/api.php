@@ -55,3 +55,38 @@ POST-REQUEST:
         {"fieldnametwo" : "fieldvalue"}
 ]
 </code></pre>
+
+<h2>tables</h2>
+<h3>usage</h3>
+<p>Tables can be setup as as simple as:</p>
+<table class="table table-bordered">
+    <tr>
+        <td>Label One</td>
+        <td>Label Two</td>
+    </tr>
+    <tr>
+        <td><code>${FieldOne}</code></td>
+        <td><code>${FieldTwo}</code></td>
+    </tr>
+</table>
+<p>
+    Important is how you send the data to the api that the table get's recognized as a table and then correctly filled. As you can see within
+    the tables array
+</p>
+
+<h3>sample</h3>
+<pre><code>"tables" : [
+    {
+        "FieldOne" : [
+            [
+                {"FieldOne" : "fieldvalue"},
+                {"FieldTwo" : "fieldvalue"}
+            ],
+            [
+                {"FieldOne" : "fieldvalue"},
+                {"FieldTwo" : "fieldvalue"}
+            ]
+        ]
+    }
+]
+</code></pre>

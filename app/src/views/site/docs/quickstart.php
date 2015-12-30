@@ -58,3 +58,6 @@ Send a POST-REST Request with the following data: <br>
 
 <h2>User Manual</h2>
 <h3>User Dashboard</h3>
+<p>
+    <img src="/gfx/user_dashboard_1.png" alt="Schema" class="img-responsive">
+</p>
