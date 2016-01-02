@@ -4,6 +4,8 @@ namespace app\modules\templates\models;
 
 use Yii;
 use \app\modules\templates\models\base\Template as BaseTemplate;
+use \app\modules\event\models\TemplateEvent;
+use \app\modules\templates\models\query\TemplateQuery;
 use yii\behaviors\TimestampBehavior;
 use PhpOffice\PhpWord\PhpWord;
 use PhpOffice\PhpWord\TemplateProcessor;
@@ -15,6 +17,15 @@ use \ForceUTF8\Encoding AS UTF8encoding;
  */
 class Template extends BaseTemplate
 {
+    /**
+     * @inheritdoc
+     * @return TemplateQuery
+     */
+    public static function find()
+    {
+        return new TemplateQuery(get_called_class());
+    }
+
     /**
      * @inheritdoc
      */
@@ -30,6 +41,7 @@ class Template extends BaseTemplate
      * @var array $params
      */
     public function generateDoc($params){
+        Yii::$app->user->identity = \app\models\User::findIdentityByAccessToken($params['template']['key']);
 
         $file = Yii::$app->user->id . '_temp.doc';
 
@@ -57,6 +69,9 @@ class Template extends BaseTemplate
 
         readfile($temp_file);
         unlink($temp_file);
+
+        $LogEvent = new TemplateEvent();
+        $LogEvent->aTemplateCreated(Yii::$app->user->identity->username,$this->id);
 
         //var_dump($params);
 

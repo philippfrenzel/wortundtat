@@ -98,8 +98,8 @@ $common = [
         'user' => [
             'class' => 'app\components\User',
             'enableAutoLogin' => true,
-            'loginUrl' => ['/user/security/login'],
-            'identityClass' => 'dektrium\user\models\User',
+            'loginUrl' => null, //['/user/security/login'],
+            'identityClass' => 'app\models\User',
         ],
         'view' => [
             'theme' => [

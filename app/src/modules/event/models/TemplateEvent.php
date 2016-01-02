@@ -3,6 +3,7 @@
 namespace app\modules\event\models;
 
 use Yii;
+use \DateTime;
 
 class TemplateEvent extends \app\modules\event\models\Event
 {
