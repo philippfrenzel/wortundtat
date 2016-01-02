@@ -128,6 +128,9 @@ $common = [
         'templates' => [
             'class' => 'app\modules\templates\Module',
         ],
+        'events' => [
+            'class' => 'app\modules\event\Module',
+        ],
         'pages' => [
             'class' => 'dmstr\modules\pages\Module',
             'layout' => '@admin-views/layouts/main',
@@ -172,6 +175,7 @@ $common = [
             '@dektrium/user/migrations',
             '@vendor/lajax/yii2-translate-manager/migrations',
             '@app/modules/templates/migrations',
+            '@app/modules/event/migrations',
         ]
     ]
 
