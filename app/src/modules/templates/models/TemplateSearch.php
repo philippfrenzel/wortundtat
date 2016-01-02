@@ -12,61 +12,61 @@ use app\modules\templates\models\Template;
 */
 class TemplateSearch extends Template
 {
-/**
-* @inheritdoc
-*/
-public function rules()
-{
-return [
-[['id', 'is_active', 'user_id', 'created_at', 'updated_at', 'deleted_at'], 'integer'],
-            [['template_name', 'template_type'], 'safe'],
-];
-}
+    /**
+    * @inheritdoc
+    */
+    public function rules()
+    {
+        return [
+        [['id', 'is_active', 'user_id', 'created_at', 'updated_at', 'deleted_at'], 'integer'],
+                    [['template_name', 'template_type'], 'safe'],
+        ];
+    }
 
-/**
-* @inheritdoc
-*/
-public function scenarios()
-{
-// bypass scenarios() implementation in the parent class
-return Model::scenarios();
-}
+    /**
+    * @inheritdoc
+    */
+    public function scenarios()
+    {
+        // bypass scenarios() implementation in the parent class
+        return Model::scenarios();
+    }
 
-        /**
-        * Creates data provider instance with search query applied
-        *
-        * @param array $params
-        *
-        * @return ActiveDataProvider
-        */
-        public function search($params)
-        {
-                $query = Template::find()->client();
+    /**
+    * Creates data provider instance with search query applied
+    *
+    * @param array $params
+    *
+    * @return ActiveDataProvider
+    */
+    public function search($params)
+    {
+        $query = Template::find()->client();
 
-                $dataProvider = new ActiveDataProvider([
-                        'query' => $query,
-                ]);
+        $dataProvider = new ActiveDataProvider([
+            'query' => $query,
+        ]);
 
-                $this->load($params);
+        $this->load($params);
 
-                if (!$this->validate()) {
-                        // uncomment the following line if you do not want to any records when validation fails
-                        // $query->where('0=1');
-                        return $dataProvider;
-                }
-
-                $query->andFilterWhere([
-                        'id' => $this->id,
-                        'is_active' => $this->is_active,
-                        'user_id' => $this->user_id,
-                        'created_at' => $this->created_at,
-                        'updated_at' => $this->updated_at,
-                        'deleted_at' => $this->deleted_at,
-                ]);
-
-                $query->andFilterWhere(['like', 'template_name', $this->template_name])
-                    ->andFilterWhere(['like', 'template_type', $this->template_type]);
-
-                return $dataProvider;
+        if (!$this->validate()) {
+            // uncomment the following line if you do not want to any records when validation fails
+            // $query->where('0=1');
+            return $dataProvider;
         }
+
+        $query->andFilterWhere([
+            'id' => $this->id,
+            'is_active' => $this->is_active,
+            'user_id' => $this->user_id,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
+            'deleted_at' => $this->deleted_at,
+        ]);
+
+        $query->andFilterWhere(['like', 'template_name', $this->template_name])
+            ->andFilterWhere(['like', 'template_type', $this->template_type]);
+
+        return $dataProvider;
+    }
 }
