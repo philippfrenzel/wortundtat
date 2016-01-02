@@ -56,6 +56,44 @@ Send a POST-REST Request with the following data: <br>
 
 <p>Step Four:</p>
 
+Enjoy your wonderfull filled template! ;)
+
+<p>A more complex sample with table data:</p>
+<pre><code>{
+    "template" : {
+        "key" : "v85SKeiURhZvraVpa0YwZkwK1APzUDC",
+        "docid" : 1,
+        "doc" : "HelloWorld",
+        "format" : "Word2013",
+        "target" : "binary",
+        "fields" : [
+            {"name" : "Paul Panther"},
+            {"vorname" : "Ubekannt"}
+        ],
+        "tables" : [
+            {
+            "FieldOne" : [
+                [
+                    {"FieldOne" : "fieldvalue11"},
+                    {"FieldTwo" : "fieldvalue12"}
+                ],
+                [
+                    {"FieldOne" : "fieldvalue21"},
+                    {"FieldTwo" : "fieldvalue22"}
+                ],
+                [
+                    {"FieldOne" : "fieldvalue31"},
+                    {"FieldTwo" : "fieldvalue32"}
+                ]
+            ]
+            }
+        ]
+    }
+}
+</code></pre>
+
+
+
 <h2>User Manual</h2>
 <h3>User Dashboard</h3>
 <p>

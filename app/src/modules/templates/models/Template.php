@@ -55,11 +55,37 @@ class Template extends BaseTemplate
 
         $document = new TemplateProcessor(dirname(__DIR__). '/../../../files/' . $this->id .'/'. $this->template_file);
 
+        /**
+         * process the fields, that have been send through the rest interface
+         */
         foreach($params['template']['fields'] AS $field)
         {
             foreach($field AS $key => $value)
             {
                 $document->setValue($key, UTF8encoding::fixUTF8($value));
+            }
+        }
+
+        /**
+         * process the tables, that have been send through the rest interface
+         */
+        foreach($params['template']['tables'] AS $tables)
+        {
+            foreach($tables AS $name => $rows)
+            {
+                //first we create a clone for the master row
+                $document->cloneRow($name,count($rows));
+
+                //our walking variable for the table
+                $ii=1;
+                foreach($rows AS $row)
+                {
+                    foreach($row AS $cell)
+                    {
+                        $document->setValue(key($cell).'#'.$ii, current($cell));
+                    }
+                    $ii++;
+                }
             }
         }
 
@@ -72,8 +98,6 @@ class Template extends BaseTemplate
 
         $LogEvent = new TemplateEvent();
         $LogEvent->aTemplateCreated(Yii::$app->user->identity->username,$this->id);
-
-        //var_dump($params);
 
         \Yii::$app->end();
     }
