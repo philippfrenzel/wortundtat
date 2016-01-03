@@ -24,6 +24,9 @@ $common = [
                     //'yii\bootstrap\BootstrapAsset' => false,
                 ],
             'basePath' => '@app/../web/assets',
+            'converter' => [
+                'class' => 'nizsheanez\assetConverter\Converter',
+            ],
         ],
         'authManager' => [
             'class' => 'yii\rbac\DbManager',
