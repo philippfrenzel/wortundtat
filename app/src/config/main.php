@@ -26,6 +26,15 @@ $common = [
             'basePath' => '@app/../web/assets',
             'converter' => [
                 'class' => 'nizsheanez\assetConverter\Converter',
+                'parsers' => [
+                    'less' => [ // file extension to parse
+                        'class' => 'nizsheanez\assetConverter\Less',
+                        'output' => 'css', // parsed output file type
+                        'options' => [
+                            //'auto' => true, // optional options
+                        ]
+                    ]
+                ]
             ],
         ],
         'authManager' => [
