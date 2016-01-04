@@ -118,6 +118,11 @@ class Template extends BaseTemplate
                 $xmlWriter = IOFactory::createWriter($phpWord, $writeFormat);
                 $xmlWriter->save("php://output");
                 break;
+            case 'Word2007':
+                $phpWord = IOFactory::load($temp_file);
+                $xmlWriter = IOFactory::createWriter($phpWord, $writeFormat);
+                $xmlWriter->save("php://output");
+                break;
             default:
                 readfile($temp_file);
                 break;
