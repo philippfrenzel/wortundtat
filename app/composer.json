@@ -35,6 +35,7 @@
     "nizsheanez/yii2-asset-converter": "dev-master",
     "neitanod/forceutf8": "dev-master",
     "phpoffice/phpword": "dev-develop",
+    "tecnickcom/tcpdf" : "*",
     "vlucas/phpdotenv": "2.*",
     "xj/yii2-modernizr-widget" : "*",
     "yiisoft/yii2": "2.0.*",

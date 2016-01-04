@@ -7,9 +7,9 @@ use \app\modules\templates\models\base\Template as BaseTemplate;
 use \app\modules\event\models\TemplateEvent;
 use \app\modules\templates\models\query\TemplateQuery;
 use yii\behaviors\TimestampBehavior;
-use PhpOffice\PhpWord\PhpWord;
+use PhpOffice\PhpWord\Settings AS PhpWordSettings;
 use PhpOffice\PhpWord\TemplateProcessor;
-use PhpOffice\PHPWord\IOFactory;
+use PhpOffice\PhpWord\IOFactory;
 use \ForceUTF8\Encoding AS UTF8encoding;
 
 /**
@@ -43,15 +43,33 @@ class Template extends BaseTemplate
     public function generateDoc($params){
         Yii::$app->user->identity = \app\models\User::findIdentityByAccessToken($params['template']['key']);
 
-        $file = Yii::$app->user->id . '_temp.doc';
-
         header("Content-Description: File Transfer");
-        header('Content-Disposition: attachment; filename="' . $file . '"');
-        //header('Content-Type: application/vnd.pdf');
-        header('Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
         header('Content-Transfer-Encoding: binary');
         header('Cache-Control: must-revalidate, post-check=0, pre-check=0');
         header('Expires: 0');
+
+        switch ($params['template']['format'])
+        {
+            case 'PDF':
+                $file = Yii::$app->user->id . '_temp.pdf';
+                $writeFormat = 'PDF';
+                PhpWordSettings::setPdfRendererPath(dirname(__DIR__).'/../../../vendor/tecnickcom/tcpdf');
+                PhpWordSettings::setPdfRendererName('TCPDF');
+                header('Content-Type: application/pdf');
+                break;
+            case 'Word2013':
+                $file = Yii::$app->user->id . '_temp.docx';
+                $writeFormat = 'Word2013';
+                header('Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+                break;
+            default:
+                $file = Yii::$app->user->id . '_temp.doc';
+                $writeFormat = 'Word2007';
+                header('Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+                break;
+        }
+
+        header('Content-Disposition: attachment; filename="' . $file . '"');
 
         $document = new TemplateProcessor(dirname(__DIR__). '/../../../files/' . $this->id .'/'. $this->template_file);
 
@@ -93,7 +111,18 @@ class Template extends BaseTemplate
         $temp_file = tempnam(sys_get_temp_dir(), $file);
         $document->saveAs($temp_file);
 
-        readfile($temp_file);
+        switch ($params['template']['format'])
+        {
+            case 'PDF':
+                $phpWord = IOFactory::load($temp_file);
+                $xmlWriter = IOFactory::createWriter($phpWord, $writeFormat);
+                $xmlWriter->save("php://output");
+                break;
+            default:
+                readfile($temp_file);
+                break;
+        }
+
         unlink($temp_file);
 
         $LogEvent = new TemplateEvent();
